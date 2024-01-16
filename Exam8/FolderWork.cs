@@ -57,10 +57,10 @@ namespace Exam8
                         sizeAfter = GetSize();
                         Console.ForegroundColor = ConsoleColor.DarkCyan;
                         Console.WriteLine($"\nРазмер папки до очистки:    {ComputeSize(sizeBefore)}");
-                        Console.WriteLine($"Размер папки после очистки: {ComputeSize(sizeAfter)}");
-                        Console.WriteLine($"Удалено файлов:             {Resources.Where(a => a.ResourceType == Type.File).Count()}");
-                        Console.WriteLine($"Удалено папок:              {Resources.Where(a => a.ResourceType == Type.Folder).Count()}");
-                        Console.WriteLine($"Освобождено:                {ComputeSize(sizeDeleted)}");
+                        Console.WriteLine($"Размер папки после очистки:   {ComputeSize(sizeAfter)}");
+                        Console.WriteLine($"Удалено файлов:               {Resources.Where(a => a.ResourceType == Type.File).Count()}");
+                        Console.WriteLine($"Удалено папок:                {Resources.Where(a => a.ResourceType == Type.Folder).Count()}");
+                        Console.WriteLine($"Освобождено:                  {ComputeSize(sizeDeleted)}");
                         Console.ForegroundColor = ConsoleColor.White;
                         break;
                     }
